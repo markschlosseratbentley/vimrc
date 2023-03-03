@@ -10,7 +10,9 @@ This repository contains a helpful .vimrc configured for ease of use. It also co
   - GVim (gvim90.exe) https://www.vim.org/download.php#pc
 - MacOS:
   - MacVim from http://macvim-dev.github.io/macvim/ (latest binary release)
-  - Or use regular 
+  - Use regular vim that comes with the system (or use `brew` to install a newer or different version)
+- Linux:
+  - Use regular vim that comes with the system (or use `apt` to install a newer or different version)
 
 ## .vimrc locations 
 
