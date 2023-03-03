@@ -39,6 +39,92 @@ doskey vt="C:\Path\To\vim90\gvim.exe" --remote-silent-tab $*
 
 MacOS / Linux:
 ```
-alias vi="vim" 
-alias vt="vim --remote-silent-tab" 
+alias vi="/Applications/MacVim.app/Contents/bin/mvim"
+alias vt="/Applications/MacVim.app/Contents/bin/mvim --remote-silent-tab"
+```
+
+## vim commands
+
+```
+remove ^M characters           :%s/^M//g      To make ^M, CTRL-V then CTRL-M
+
+write file                     :w
+quit                           :q
+write and quit                 :wq
+quit without saving changes    :q! 
+
+edit existing file             :edit
+edit file (horiz split)        :split
+edit file (vert split)         :vsplit
+
+create empty buffer            :enew
+create empty buf (horiz split) :new
+create empty buf (vert split)  :vnew
+
+split current file (vertical)  ^wv
+split current file (horiz)     ^ws
+switch among split windows     ^ww
+
+mark location for yanking      mk
+copy from mark to here         y'k
+cut from mark to here          d'k
+yank (copy) current line       yy
+paste                          p
+delete (cut) current line      dd
+delete (cut) current word      dw
+delete (cut) current character x
+delete word from cursor        dw
+back, delete word from cursor  bdw
+enter insert mode              i
+remove next character          r
+enter remove mode              R
+undo                           u
+redo                           ^r
+copy into system clipboard     "*yy
+paste from system clipboard    "*p
+preface for system clipboard   "*
+
+move forward one word          w
+move backward one word         b
+Move forward one paragraph     }
+Move backward one paragraph    {
+
+center screen on cursor        zz
+
+find                           :/foo
+find next                      n
+global replace                 :%s/find/replace/g
+unhighlight search results     :noh
+
+open new tab                   :tabe
+open current file in new tab   :tab sp
+move to next tab               gt
+move to prev tab               gT
+move tab to position (or last) :tabm [ndx] 
+
+go to previous location        ^o
+go to next location            ^i
+find tag (brings up dialog)    :tj
+jump to tag for cur word       ^]
+```
+
+## Tags
+
+### Installing tags
+
+- Windows: https://github.com/universal-ctags
+- MacOS: use `brew` to install ctags
+- Linux: use `apt` to install ctags
+
+### Generate tags for a source tree
+
+Execute the following at the root of the source tree: `ctags -R -a tags .`
+
+### Using tags
+
+In short, within vim, use the following:
+
+```
+find tag (brings up dialog)    :tj
+jump to tag for cur word       ^]
 ```
