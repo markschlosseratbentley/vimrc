@@ -27,6 +27,8 @@ To determine the location of _vimrc on Windows, issue the following commands wit
 :echo $HOME
 ```
 
+Copy the .vimrc file from this repository to the property location.
+
 ## Helpful command line invocations
 
 The following command line invocations will allow you to open a new instance of vi with a particular file (`vi`) or open a file as a tab on an existing vim session (`vt`).
@@ -113,8 +115,10 @@ jump to tag for cur word       ^]
 ### Installing tags
 
 - Windows: https://github.com/universal-ctags
-- MacOS: use `brew` to install ctags
-- Linux: use `apt` to install ctags
+- MacOS: use `brew` to install universal-ctags
+- Linux: use `apt` to install universal-ctags
+
+Copy the .ctags file from this repository to your home directory.
 
 ### Generate tags for a source tree
 
