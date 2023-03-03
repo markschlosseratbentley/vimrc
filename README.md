@@ -124,6 +124,8 @@ Copy the .ctags file from this repository to your home directory.
 
 Execute the following at the root of the source tree: `ctags -R -a tags .`
 
+You probably want to do this instead to exclude some unhelpful directories: `ctags -R --exclude=.git --exclude=node_modules .`
+
 ### Using tags
 
 In short, within vim, use the following:
