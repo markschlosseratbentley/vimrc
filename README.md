@@ -124,7 +124,7 @@ Copy the .ctags file from this repository to your home directory. This might not
 
 Execute the following at the root of the source tree: `ctags -R -a tags .`
 
-The above command will generate tags for everything it encounters. You probably want to do something like this instead to exclude certain directories / file types: `ctags -R --exclude=.git --exclude=node_modules --exclude='*.js' --exclude='*.d.ts`
+The above command will generate tags for everything it encounters. You probably want to do something like this instead to exclude certain directories / file types: `ctags --extra=+f -R --exclude=.git --exclude=node_modules --exclude='*.js' --exclude='*.d.ts'`. See the `.zshrc` file in this repository for the latest `mktags` alias.
 
 A file named `tags` will be created at the root of your source tree. `vim` will consult this file to navigate when files are opened from this source tree.
 
