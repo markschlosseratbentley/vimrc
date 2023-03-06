@@ -124,7 +124,9 @@ Copy the .ctags file from this repository to your home directory. This might not
 
 Execute the following at the root of the source tree: `ctags -R -a tags .`
 
-You probably want to do this instead to exclude some unhelpful directories: `ctags -R --exclude=.git --exclude=node_modules .`
+The above command will generate tags for everything it encounters. You probably want to do something like this instead to exclude certain directories / file types: `ctags -R --exclude=.git --exclude=node_modules --exclude='*.js' --exclude='*.d.ts`
+
+A file named `tags` will be created at the root of your source tree. `vim` will consult this file to navigate when files are opened from this source tree.
 
 ### Using tags
 
