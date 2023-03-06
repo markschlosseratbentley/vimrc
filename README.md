@@ -118,7 +118,7 @@ jump to tag for cur word       ^]
 - MacOS: use `brew` to install universal-ctags
 - Linux: use `apt` to install universal-ctags
 
-Copy the .ctags file from this repository to your home directory.
+Copy the .ctags file from this repository to your home directory. This might not be necessary.
 
 ### Generate tags for a source tree
 
