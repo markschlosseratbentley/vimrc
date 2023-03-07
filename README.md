@@ -95,6 +95,7 @@ center screen on cursor        zz
 
 find                           :/foo
 find next                      n
+find previous                  N
 global replace                 :%s/find/replace/g
 unhighlight search results     :noh
 
