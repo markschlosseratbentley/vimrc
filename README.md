@@ -88,8 +88,8 @@ preface for system clipboard   "*
 
 move forward one word          w
 move backward one word         b
-Move forward one paragraph     }
-Move backward one paragraph    {
+move forward one paragraph     }
+move backward one paragraph    {
 
 center screen on cursor        zz
 
@@ -109,6 +109,11 @@ go to previous location        ^o
 go to next location            ^i
 find tag (brings up dialog)    :tj
 jump to tag for cur word       ^]
+
+bookmark local location        ma          a is name of bookmark
+bookmark global location       mA          A is name of bookmark
+recall local bookmark          `a          a is name of bookmark
+recall global bookmark         `A          A is name of bookmark
 ```
 
 ## Tags
