@@ -45,6 +45,18 @@ alias vi="/Applications/MacVim.app/Contents/bin/mvim"
 alias vt="/Applications/MacVim.app/Contents/bin/mvim --remote-silent-tab"
 ```
 
+## Git Plugins
+
+1. Clone this repo: https://github.com/amjith/git-vim/tree/master
+
+```bash
+cd ~
+mkdir .vim
+cd .vim
+cp -rf ~/local/code/git-vim/plugin .
+cp -rf ~/local/code/git-vim/syntax .
+```
+
 ## vim commands
 
 ```
