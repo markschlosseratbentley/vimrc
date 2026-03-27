@@ -49,6 +49,8 @@ alias vt="/Applications/MacVim.app/Contents/bin/mvim --remote-silent-tab"
 
 1. Clone this repo: https://github.com/amjith/git-vim/tree/master
 
+2. Copy the plugin to proper folder:
+
 ```bash
 cd ~
 mkdir .vim
