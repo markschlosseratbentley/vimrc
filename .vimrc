@@ -10,7 +10,7 @@ colorscheme koehler
 syntax on
 set number
 highlight LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE gui=NONE guifg=DarkGrey guibg=NONE
-set lines=83 columns=150
+" set lines=83 columns=150
 " set colorcolumn=150
 set guioptions-=m  "remove menu bar
 set guioptions-=T  "remove toolbar
