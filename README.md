@@ -104,6 +104,8 @@ move forward one word          w
 move backward one word         b
 move forward one paragraph     }
 move backward one paragraph    {
+page down                      ^f
+page up                        ^b
 
 center screen on cursor        zz
 
